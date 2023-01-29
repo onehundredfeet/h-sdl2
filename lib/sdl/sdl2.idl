@@ -1,0 +1,1183 @@
+enum SampleCount
+{
+	"SAMPLE_COUNT_1",
+	"SAMPLE_COUNT_2",
+	"SAMPLE_COUNT_4",
+	"SAMPLE_COUNT_8",
+	"SAMPLE_COUNT_16"
+};
+
+
+enum ResourceState
+{
+	"RESOURCE_STATE_UNDEFINED",
+	"RESOURCE_STATE_VERTEX_AND_CONSTANT_BUFFER",
+	"RESOURCE_STATE_INDEX_BUFFER",
+	"RESOURCE_STATE_RENDER_TARGET",
+	"RESOURCE_STATE_UNORDERED_ACCESS",
+	"RESOURCE_STATE_DEPTH_WRITE",
+	"RESOURCE_STATE_DEPTH_READ",
+	"RESOURCE_STATE_NON_PIXEL_SHADER_RESOURCE",
+	"RESOURCE_STATE_PIXEL_SHADER_RESOURCE",
+	"RESOURCE_STATE_SHADER_RESOURCE",
+	"RESOURCE_STATE_STREAM_OUT",
+	"RESOURCE_STATE_INDIRECT_ARGUMENT",
+	"RESOURCE_STATE_COPY_DEST",
+	"RESOURCE_STATE_COPY_SOURCE",
+	"RESOURCE_STATE_GENERIC_READ",
+	"RESOURCE_STATE_PRESENT",
+	"RESOURCE_STATE_COMMON",
+	"RESOURCE_STATE_RAYTRACING_ACCELERATION_STRUCTURE",
+	"RESOURCE_STATE_SHADING_RATE_SOURCE"
+};
+
+enum TinyImageFormat {
+	"TinyImageFormat_UNDEFINED" ,
+	"TinyImageFormat_R1_UNORM" ,
+	"TinyImageFormat_R2_UNORM" ,
+	"TinyImageFormat_R4_UNORM" ,
+	"TinyImageFormat_R4G4_UNORM" ,
+	"TinyImageFormat_G4R4_UNORM" ,
+	"TinyImageFormat_A8_UNORM" ,
+	"TinyImageFormat_R8_UNORM" ,
+	"TinyImageFormat_R8_SNORM" ,
+	"TinyImageFormat_R8_UINT" ,
+	"TinyImageFormat_R8_SINT" ,
+	"TinyImageFormat_R8_SRGB" ,
+	"TinyImageFormat_B2G3R3_UNORM" ,
+	"TinyImageFormat_R4G4B4A4_UNORM" ,
+	"TinyImageFormat_R4G4B4X4_UNORM" ,
+	"TinyImageFormat_B4G4R4A4_UNORM" ,
+	"TinyImageFormat_B4G4R4X4_UNORM" ,
+	"TinyImageFormat_A4R4G4B4_UNORM" ,
+	"TinyImageFormat_X4R4G4B4_UNORM" ,
+	"TinyImageFormat_A4B4G4R4_UNORM" ,
+	"TinyImageFormat_X4B4G4R4_UNORM" ,
+	"TinyImageFormat_R5G6B5_UNORM" ,
+	"TinyImageFormat_B5G6R5_UNORM" ,
+	"TinyImageFormat_R5G5B5A1_UNORM" ,
+	"TinyImageFormat_B5G5R5A1_UNORM" ,
+	"TinyImageFormat_A1B5G5R5_UNORM" ,
+	"TinyImageFormat_A1R5G5B5_UNORM" ,
+	"TinyImageFormat_R5G5B5X1_UNORM" ,
+	"TinyImageFormat_B5G5R5X1_UNORM" ,
+	"TinyImageFormat_X1R5G5B5_UNORM" ,
+	"TinyImageFormat_X1B5G5R5_UNORM" ,
+	"TinyImageFormat_B2G3R3A8_UNORM" ,
+	"TinyImageFormat_R8G8_UNORM" ,
+	"TinyImageFormat_R8G8_SNORM" ,
+	"TinyImageFormat_G8R8_UNORM" ,
+	"TinyImageFormat_G8R8_SNORM" ,
+	"TinyImageFormat_R8G8_UINT" ,
+	"TinyImageFormat_R8G8_SINT" ,
+	"TinyImageFormat_R8G8_SRGB" ,
+	"TinyImageFormat_R16_UNORM" ,
+	"TinyImageFormat_R16_SNORM" ,
+	"TinyImageFormat_R16_UINT" ,
+	"TinyImageFormat_R16_SINT" ,
+	"TinyImageFormat_R16_SFLOAT" ,
+	"TinyImageFormat_R16_SBFLOAT" ,
+	"TinyImageFormat_R8G8B8_UNORM" ,
+	"TinyImageFormat_R8G8B8_SNORM" ,
+	"TinyImageFormat_R8G8B8_UINT" ,
+	"TinyImageFormat_R8G8B8_SINT" ,
+	"TinyImageFormat_R8G8B8_SRGB" ,
+	"TinyImageFormat_B8G8R8_UNORM" ,
+	"TinyImageFormat_B8G8R8_SNORM" ,
+	"TinyImageFormat_B8G8R8_UINT" ,
+	"TinyImageFormat_B8G8R8_SINT" ,
+	"TinyImageFormat_B8G8R8_SRGB" ,
+	"TinyImageFormat_R8G8B8A8_UNORM" ,
+	"TinyImageFormat_R8G8B8A8_SNORM" ,
+	"TinyImageFormat_R8G8B8A8_UINT" ,
+	"TinyImageFormat_R8G8B8A8_SINT" ,
+	"TinyImageFormat_R8G8B8A8_SRGB" ,
+	"TinyImageFormat_B8G8R8A8_UNORM" ,
+	"TinyImageFormat_B8G8R8A8_SNORM" ,
+	"TinyImageFormat_B8G8R8A8_UINT" ,
+	"TinyImageFormat_B8G8R8A8_SINT" ,
+	"TinyImageFormat_B8G8R8A8_SRGB" ,
+	"TinyImageFormat_R8G8B8X8_UNORM" ,
+	"TinyImageFormat_B8G8R8X8_UNORM" ,
+	"TinyImageFormat_R16G16_UNORM" ,
+	"TinyImageFormat_G16R16_UNORM" ,
+	"TinyImageFormat_R16G16_SNORM" ,
+	"TinyImageFormat_G16R16_SNORM" ,
+	"TinyImageFormat_R16G16_UINT" ,
+	"TinyImageFormat_R16G16_SINT" ,
+	"TinyImageFormat_R16G16_SFLOAT" ,
+	"TinyImageFormat_R16G16_SBFLOAT" ,
+	"TinyImageFormat_R32_UINT" ,
+	"TinyImageFormat_R32_SINT" ,
+	"TinyImageFormat_R32_SFLOAT" ,
+	"TinyImageFormat_A2R10G10B10_UNORM" ,
+	"TinyImageFormat_A2R10G10B10_UINT" ,
+	"TinyImageFormat_A2R10G10B10_SNORM" ,
+	"TinyImageFormat_A2R10G10B10_SINT" ,
+	"TinyImageFormat_A2B10G10R10_UNORM" ,
+	"TinyImageFormat_A2B10G10R10_UINT" ,
+	"TinyImageFormat_A2B10G10R10_SNORM" ,
+	"TinyImageFormat_A2B10G10R10_SINT" ,
+	"TinyImageFormat_R10G10B10A2_UNORM" ,
+	"TinyImageFormat_R10G10B10A2_UINT" ,
+	"TinyImageFormat_R10G10B10A2_SNORM" ,
+	"TinyImageFormat_R10G10B10A2_SINT" ,
+	"TinyImageFormat_B10G10R10A2_UNORM" ,
+	"TinyImageFormat_B10G10R10A2_UINT" ,
+	"TinyImageFormat_B10G10R10A2_SNORM" ,
+	"TinyImageFormat_B10G10R10A2_SINT" ,
+	"TinyImageFormat_B10G11R11_UFLOAT" ,
+	"TinyImageFormat_E5B9G9R9_UFLOAT" ,
+	"TinyImageFormat_R16G16B16_UNORM" ,
+	"TinyImageFormat_R16G16B16_SNORM" ,
+	"TinyImageFormat_R16G16B16_UINT" ,
+	"TinyImageFormat_R16G16B16_SINT" ,
+	"TinyImageFormat_R16G16B16_SFLOAT" ,
+	"TinyImageFormat_R16G16B16_SBFLOAT" ,
+	"TinyImageFormat_R16G16B16A16_UNORM" ,
+	"TinyImageFormat_R16G16B16A16_SNORM" ,
+	"TinyImageFormat_R16G16B16A16_UINT" ,
+	"TinyImageFormat_R16G16B16A16_SINT" ,
+	"TinyImageFormat_R16G16B16A16_SFLOAT" ,
+	"TinyImageFormat_R16G16B16A16_SBFLOAT" ,
+	"TinyImageFormat_R32G32_UINT" ,
+	"TinyImageFormat_R32G32_SINT" ,
+	"TinyImageFormat_R32G32_SFLOAT" ,
+	"TinyImageFormat_R32G32B32_UINT" ,
+	"TinyImageFormat_R32G32B32_SINT" ,
+	"TinyImageFormat_R32G32B32_SFLOAT" ,
+	"TinyImageFormat_R32G32B32A32_UINT" ,
+	"TinyImageFormat_R32G32B32A32_SINT" ,
+	"TinyImageFormat_R32G32B32A32_SFLOAT" ,
+	"TinyImageFormat_R64_UINT" ,
+	"TinyImageFormat_R64_SINT" ,
+	"TinyImageFormat_R64_SFLOAT" ,
+	"TinyImageFormat_R64G64_UINT" ,
+	"TinyImageFormat_R64G64_SINT" ,
+	"TinyImageFormat_R64G64_SFLOAT" ,
+	"TinyImageFormat_R64G64B64_UINT" ,
+	"TinyImageFormat_R64G64B64_SINT" ,
+	"TinyImageFormat_R64G64B64_SFLOAT" ,
+	"TinyImageFormat_R64G64B64A64_UINT" ,
+	"TinyImageFormat_R64G64B64A64_SINT" ,
+	"TinyImageFormat_R64G64B64A64_SFLOAT" ,
+	"TinyImageFormat_D16_UNORM" ,
+	"TinyImageFormat_X8_D24_UNORM" ,
+	"TinyImageFormat_D32_SFLOAT" ,
+	"TinyImageFormat_S8_UINT" ,
+	"TinyImageFormat_D16_UNORM_S8_UINT" ,
+	"TinyImageFormat_D24_UNORM_S8_UINT" ,
+	"TinyImageFormat_D32_SFLOAT_S8_UINT" ,
+	"TinyImageFormat_DXBC1_RGB_UNORM" ,
+	"TinyImageFormat_DXBC1_RGB_SRGB" ,
+	"TinyImageFormat_DXBC1_RGBA_UNORM" ,
+	"TinyImageFormat_DXBC1_RGBA_SRGB" ,
+	"TinyImageFormat_DXBC2_UNORM" ,
+	"TinyImageFormat_DXBC2_SRGB" ,
+	"TinyImageFormat_DXBC3_UNORM" ,
+	"TinyImageFormat_DXBC3_SRGB" ,
+	"TinyImageFormat_DXBC4_UNORM" ,
+	"TinyImageFormat_DXBC4_SNORM" ,
+	"TinyImageFormat_DXBC5_UNORM" ,
+	"TinyImageFormat_DXBC5_SNORM" ,
+	"TinyImageFormat_DXBC6H_UFLOAT" ,
+	"TinyImageFormat_DXBC6H_SFLOAT" ,
+	"TinyImageFormat_DXBC7_UNORM" ,
+	"TinyImageFormat_DXBC7_SRGB" ,
+	"TinyImageFormat_PVRTC1_2BPP_UNORM" ,
+	"TinyImageFormat_PVRTC1_4BPP_UNORM" ,
+	"TinyImageFormat_PVRTC2_2BPP_UNORM" ,
+	"TinyImageFormat_PVRTC2_4BPP_UNORM" ,
+	"TinyImageFormat_PVRTC1_2BPP_SRGB" ,
+	"TinyImageFormat_PVRTC1_4BPP_SRGB" ,
+	"TinyImageFormat_PVRTC2_2BPP_SRGB" ,
+	"TinyImageFormat_PVRTC2_4BPP_SRGB" ,
+	"TinyImageFormat_ETC2_R8G8B8_UNORM" ,
+	"TinyImageFormat_ETC2_R8G8B8_SRGB" ,
+	"TinyImageFormat_ETC2_R8G8B8A1_UNORM" ,
+	"TinyImageFormat_ETC2_R8G8B8A1_SRGB" ,
+	"TinyImageFormat_ETC2_R8G8B8A8_UNORM" ,
+	"TinyImageFormat_ETC2_R8G8B8A8_SRGB" ,
+	"TinyImageFormat_ETC2_EAC_R11_UNORM" ,
+	"TinyImageFormat_ETC2_EAC_R11_SNORM" ,
+	"TinyImageFormat_ETC2_EAC_R11G11_UNORM" ,
+	"TinyImageFormat_ETC2_EAC_R11G11_SNORM" ,
+	"TinyImageFormat_ASTC_4x4_UNORM" ,
+	"TinyImageFormat_ASTC_4x4_SRGB" ,
+	"TinyImageFormat_ASTC_5x4_UNORM" ,
+	"TinyImageFormat_ASTC_5x4_SRGB" ,
+	"TinyImageFormat_ASTC_5x5_UNORM" ,
+	"TinyImageFormat_ASTC_5x5_SRGB" ,
+	"TinyImageFormat_ASTC_6x5_UNORM" ,
+	"TinyImageFormat_ASTC_6x5_SRGB" ,
+	"TinyImageFormat_ASTC_6x6_UNORM" ,
+	"TinyImageFormat_ASTC_6x6_SRGB" ,
+	"TinyImageFormat_ASTC_8x5_UNORM" ,
+	"TinyImageFormat_ASTC_8x5_SRGB" ,
+	"TinyImageFormat_ASTC_8x6_UNORM" ,
+	"TinyImageFormat_ASTC_8x6_SRGB" ,
+	"TinyImageFormat_ASTC_8x8_UNORM" ,
+	"TinyImageFormat_ASTC_8x8_SRGB" ,
+	"TinyImageFormat_ASTC_10x5_UNORM" ,
+	"TinyImageFormat_ASTC_10x5_SRGB" ,
+	"TinyImageFormat_ASTC_10x6_UNORM" ,
+	"TinyImageFormat_ASTC_10x6_SRGB" ,
+	"TinyImageFormat_ASTC_10x8_UNORM" ,
+	"TinyImageFormat_ASTC_10x8_SRGB" ,
+	"TinyImageFormat_ASTC_10x10_UNORM" ,
+	"TinyImageFormat_ASTC_10x10_SRGB" ,
+	"TinyImageFormat_ASTC_12x10_UNORM" ,
+	"TinyImageFormat_ASTC_12x10_SRGB" ,
+	"TinyImageFormat_ASTC_12x12_UNORM" ,
+	"TinyImageFormat_ASTC_12x12_SRGB" ,
+	"TinyImageFormat_CLUT_P4" ,
+	"TinyImageFormat_CLUT_P4A4" ,
+	"TinyImageFormat_CLUT_P8" ,
+	"TinyImageFormat_CLUT_P8A8" ,
+	"TinyImageFormat_R4G4B4A4_UNORM_PACK16" ,
+	"TinyImageFormat_B4G4R4A4_UNORM_PACK16" ,
+	"TinyImageFormat_R5G6B5_UNORM_PACK16" ,
+	"TinyImageFormat_B5G6R5_UNORM_PACK16" ,
+	"TinyImageFormat_R5G5B5A1_UNORM_PACK16" ,
+	"TinyImageFormat_B5G5R5A1_UNORM_PACK16" ,
+	"TinyImageFormat_A1R5G5B5_UNORM_PACK16" ,
+	"TinyImageFormat_G16B16G16R16_422_UNORM" ,
+	"TinyImageFormat_B16G16R16G16_422_UNORM" ,
+	"TinyImageFormat_R12X4G12X4B12X4A12X4_UNORM_4PACK16" ,
+	"TinyImageFormat_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16" ,
+	"TinyImageFormat_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16" ,
+	"TinyImageFormat_R10X6G10X6B10X6A10X6_UNORM_4PACK16" ,
+	"TinyImageFormat_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16" ,
+	"TinyImageFormat_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16" ,
+	"TinyImageFormat_G8B8G8R8_422_UNORM" ,
+	"TinyImageFormat_B8G8R8G8_422_UNORM" ,
+	"TinyImageFormat_G8_B8_R8_3PLANE_420_UNORM" ,
+	"TinyImageFormat_G8_B8R8_2PLANE_420_UNORM" ,
+	"TinyImageFormat_G8_B8_R8_3PLANE_422_UNORM" ,
+	"TinyImageFormat_G8_B8R8_2PLANE_422_UNORM" ,
+	"TinyImageFormat_G8_B8_R8_3PLANE_444_UNORM" ,
+	"TinyImageFormat_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16" ,
+	"TinyImageFormat_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16" ,
+	"TinyImageFormat_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16" ,
+	"TinyImageFormat_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16" ,
+	"TinyImageFormat_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16" ,
+	"TinyImageFormat_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16" ,
+	"TinyImageFormat_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16" ,
+	"TinyImageFormat_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16" ,
+	"TinyImageFormat_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16" ,
+	"TinyImageFormat_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16" ,
+	"TinyImageFormat_G16_B16_R16_3PLANE_420_UNORM" ,
+	"TinyImageFormat_G16_B16_R16_3PLANE_422_UNORM" ,
+	"TinyImageFormat_G16_B16_R16_3PLANE_444_UNORM" ,
+	"TinyImageFormat_G16_B16R16_2PLANE_420_UNORM" ,
+	"TinyImageFormat_G16_B16R16_2PLANE_422_UNORM" 
+};
+
+
+enum TextureCreationFlags
+{
+	/// Default flag (Texture will use default allocation strategy decided by the api specific allocator)
+	"TEXTURE_CREATION_FLAG_NONE",
+	/// Texture will allocate its own memory (COMMITTED resource)
+	"TEXTURE_CREATION_FLAG_OWN_MEMORY_BIT",
+	/// Texture will be allocated in memory which can be shared among multiple processes
+	"TEXTURE_CREATION_FLAG_EXPORT_BIT",
+	/// Texture will be allocated in memory which can be shared among multiple gpus
+	"TEXTURE_CREATION_FLAG_EXPORT_ADAPTER_BIT",
+	/// Texture will be imported from a handle created in another process
+	"TEXTURE_CREATION_FLAG_IMPORT_BIT",
+	/// Use ESRAM to store this texture
+	"TEXTURE_CREATION_FLAG_ESRAM",
+	/// Use on-tile memory to store this texture
+	"TEXTURE_CREATION_FLAG_ON_TILE",
+	/// Prevent compression meta data from generating (XBox)
+	"TEXTURE_CREATION_FLAG_NO_COMPRESSION",
+	/// Force 2D instead of automatically determining dimension based on width, height, depth
+	"TEXTURE_CREATION_FLAG_FORCE_2D",
+	/// Force 3D instead of automatically determining dimension based on width, height, depth
+	"TEXTURE_CREATION_FLAG_FORCE_3D",
+	/// Display target
+	"TEXTURE_CREATION_FLAG_ALLOW_DISPLAY_TARGET",
+	/// Create an sRGB texture.
+	"TEXTURE_CREATION_FLAG_SRGB",
+	/// Create a normal map texture
+	"TEXTURE_CREATION_FLAG_NORMAL_MAP",
+	/// Fast clear
+	"TEXTURE_CREATION_FLAG_FAST_CLEAR",
+	/// Fragment mask
+	"TEXTURE_CREATION_FLAG_FRAG_MASK",
+	/// Doubles the amount of array layers of the texture when rendering VR. Also forces the texture to be a 2D Array texture.
+    "TEXTURE_CREATION_FLAG_VR_MULTIVIEW",
+    /// Binds the FFR fragment density if this texture is used as a render target.
+    "TEXTURE_CREATION_FLAG_VR_FOVEATED_RENDERING"
+} ;
+
+
+// Blend states are always attached to one of the eight or more render targets that
+// are in a MRT
+// Mask constants
+enum BlendStateTargets
+{
+	"BLEND_STATE_TARGET_0",
+	"BLEND_STATE_TARGET_1",
+	"BLEND_STATE_TARGET_2",
+	"BLEND_STATE_TARGET_3",
+	"BLEND_STATE_TARGET_4",
+	"BLEND_STATE_TARGET_5",
+	"BLEND_STATE_TARGET_6",
+	"BLEND_STATE_TARGET_7",
+	"BLEND_STATE_TARGET_ALL"
+};
+
+enum CullMode
+{
+	"CULL_MODE_NONE",
+	"CULL_MODE_BACK",
+	"CULL_MODE_FRONT",
+	"CULL_MODE_BOTH",
+	"MAX_CULL_MODES"
+} ;
+
+enum FrontFace
+{
+	"FRONT_FACE_CCW",
+	"FRONT_FACE_CW"
+} ;
+
+enum FillMode
+{
+	"FILL_MODE_SOLID",
+	"FILL_MODE_WIREFRAME",
+	"MAX_FILL_MODES"
+} ;
+
+enum PipelineType
+{
+	"PIPELINE_TYPE_UNDEFINED",
+	"PIPELINE_TYPE_COMPUTE",
+	"PIPELINE_TYPE_GRAPHICS",
+	"PIPELINE_TYPE_RAYTRACING",
+	"PIPELINE_TYPE_COUNT"
+} ;
+
+enum FilterType
+{
+	"FILTER_NEAREST",
+	"FILTER_LINEAR"
+} ;
+
+enum AddressMode
+{
+	"ADDRESS_MODE_MIRROR",
+	"ADDRESS_MODE_REPEAT",
+	"ADDRESS_MODE_CLAMP_TO_EDGE",
+	"ADDRESS_MODE_CLAMP_TO_BORDER"
+};
+
+enum MipMapMode
+{
+	"MIPMAP_MODE_NEAREST",
+	"MIPMAP_MODE_LINEAR"
+} ;
+
+
+enum PrimitiveTopology
+{
+	"PRIMITIVE_TOPO_POINT_LIST",
+	"PRIMITIVE_TOPO_LINE_LIST",
+	"PRIMITIVE_TOPO_LINE_STRIP",
+	"PRIMITIVE_TOPO_TRI_LIST",
+	"PRIMITIVE_TOPO_TRI_STRIP",
+	"PRIMITIVE_TOPO_PATCH_LIST",
+	"PRIMITIVE_TOPO_COUNT"
+};
+
+enum IndexType
+{
+	"INDEX_TYPE_UINT32",
+	"INDEX_TYPE_UINT16"
+};
+
+enum ShaderSemantic
+{
+	"SEMANTIC_UNDEFINED",
+	"SEMANTIC_POSITION",
+	"SEMANTIC_NORMAL",
+	"SEMANTIC_COLOR",
+	"SEMANTIC_TANGENT",
+	"SEMANTIC_BITANGENT",
+	"SEMANTIC_JOINTS",
+	"SEMANTIC_WEIGHTS",
+	"SEMANTIC_SHADING_RATE",
+	"SEMANTIC_TEXCOORD0",
+	"SEMANTIC_TEXCOORD1",
+	"SEMANTIC_TEXCOORD2",
+	"SEMANTIC_TEXCOORD3",
+	"SEMANTIC_TEXCOORD4",
+	"SEMANTIC_TEXCOORD5",
+	"SEMANTIC_TEXCOORD6",
+	"SEMANTIC_TEXCOORD7",
+	"SEMANTIC_TEXCOORD8",
+	"SEMANTIC_TEXCOORD9"
+};
+
+enum BlendConstant
+{
+	"BC_ZERO",
+	"BC_ONE",
+	"BC_SRC_COLOR",
+	"BC_ONE_MINUS_SRC_COLOR",
+	"BC_DST_COLOR",
+	"BC_ONE_MINUS_DST_COLOR",
+	"BC_SRC_ALPHA",
+	"BC_ONE_MINUS_SRC_ALPHA",
+	"BC_DST_ALPHA",
+	"BC_ONE_MINUS_DST_ALPHA",
+	"BC_SRC_ALPHA_SATURATE",
+	"BC_BLEND_FACTOR",
+	"BC_ONE_MINUS_BLEND_FACTOR",
+	"MAX_BLEND_CONSTANTS"
+};
+
+enum BlendMode
+{
+	"BM_ADD",
+	"BM_SUBTRACT",
+	"BM_REVERSE_SUBTRACT",
+	"BM_MIN",
+	"BM_MAX",
+	"MAX_BLEND_MODES"
+};
+
+ enum CompareMode
+{
+	"CMP_NEVER",
+	"CMP_LESS",
+	"CMP_EQUAL",
+	"CMP_LEQUAL",
+	"CMP_GREATER",
+	"CMP_NOTEQUAL",
+	"CMP_GEQUAL",
+	"CMP_ALWAYS",
+	"MAX_COMPARE_MODES"
+} ;
+
+ enum StencilOp
+{
+	"STENCIL_OP_KEEP",
+	"STENCIL_OP_SET_ZERO",
+	"STENCIL_OP_REPLACE",
+	"STENCIL_OP_INVERT",
+	"STENCIL_OP_INCR",
+	"STENCIL_OP_DECR",
+	"STENCIL_OP_INCR_SAT",
+	"STENCIL_OP_DECR_SAT",
+	"MAX_STENCIL_OPS"
+} ;
+
+enum DescriptorUpdateFrequency
+{
+	"DESCRIPTOR_UPDATE_FREQ_NONE",
+	"DESCRIPTOR_UPDATE_FREQ_PER_FRAME",
+	"DESCRIPTOR_UPDATE_FREQ_PER_BATCH",
+	"DESCRIPTOR_UPDATE_FREQ_PER_DRAW",
+	"DESCRIPTOR_UPDATE_FREQ_COUNT"
+};
+
+enum DescriptorType
+{
+	"DESCRIPTOR_TYPE_UNDEFINED",
+	"DESCRIPTOR_TYPE_SAMPLER",
+	"DESCRIPTOR_TYPE_TEXTURE",
+	"DESCRIPTOR_TYPE_RW_TEXTURE",
+	"DESCRIPTOR_TYPE_BUFFER",
+	"DESCRIPTOR_TYPE_RW_BUFFER",
+	"DESCRIPTOR_TYPE_UNIFORM_BUFFER",
+	"DESCRIPTOR_TYPE_ROOT_CONSTANT",
+	"DESCRIPTOR_TYPE_VERTEX_BUFFER",
+	"DESCRIPTOR_TYPE_INDEX_BUFFER",
+	"DESCRIPTOR_TYPE_INDIRECT_BUFFER",
+	"DESCRIPTOR_TYPE_TEXTURE_CUBE"
+};
+enum LoadActionType
+{
+	"LOAD_ACTION_DONTCARE",
+	"LOAD_ACTION_LOAD",
+	"LOAD_ACTION_CLEAR",
+	"MAX_LOAD_ACTION"
+} ;
+
+[NoDelete]
+interface ColorMask {
+	const int NONE = 0;
+	const int RED = 0x01;
+	const int GREEN = 0x02;
+	const int BLUE = 0x04;
+	const int ALPHA = 0x08;
+	const int ALL = 0xff;
+};
+//static const int RED = 0x1;
+//static const int GREEN = 0x2;
+//static const int BLUE = 0x4;
+//static const int ALPHA = 0x8;
+//static const int ALL = (RED | GREEN | BLUE | ALPHA);
+//static const int NONE = 0;
+
+//static const int BS_NONE = -1;
+//static const int DS_NONE = -1;
+//static const int RS_NONE = -1;
+
+interface HashBuilder {
+	void HashBuilder();
+	void reset(int64 seed);
+	void addInt8( int v );
+	void addInt16( int v );
+	void addInt32( int v );
+	void addInt64( int64 v );
+	void addBytes( bytes b, int offset, int length );
+
+	int64 getValue();
+};
+
+[NoDelete]
+interface BlendStateDesc {
+	/// Source blend factor per render target.
+	[Internal="mSrcFactors"] attribute 	BlendConstant [] SrcFactors;
+	/// Destination blend factor per render target.
+	[Internal="mDstFactors"] attribute 	BlendConstant [] DstFactors;
+	/// Source alpha blend factor per render target.
+	[Internal="mSrcAlphaFactors"] attribute BlendConstant [] SrcAlphaFactors;
+	/// Destination alpha blend factor per render target.
+	[Internal="mDstAlphaFactors"] attribute BlendConstant [] DstAlphaFactors;
+	/// Blend mode per render target.
+	[Internal="mBlendModes"] attribute 	BlendMode [] BlendModes;
+	/// Alpha blend mode per render target.
+	[Internal="mBlendAlphaModes"] attribute BlendMode [] BlendAlphaModes;
+	/// Write mask per render target.
+	[Internal="mMasks"] attribute int [] Masks; //MAX_RENDER_TARGET_ATTACHMENTS
+	/// Mask that identifies the render targets affected by the blend state.
+	[Internal="mRenderTargetMask", SetCast="BlendStateTargets"] attribute int renderTargetMask; //BlendStateTargets
+	
+	[CObject, Internal="forge_blend_state_desc_set_rt"] void setRenderTarget( BlendStateTargets target, bool mask );
+
+	/// Set whether alpha to coverage should be enabled.
+	[Internal="mAlphaToCoverage"] attribute bool alphaToCoverage;
+	/// Set whether each render target has an unique blend function. When false the blend function in slot 0 will be used for all render targets.
+	[Internal="mIndependentBlend"] attribute bool independentBlend;
+};
+
+[NoDelete]
+interface DepthStateDesc {
+	[Internal="mDepthTest"] attribute bool        depthTest;
+	[Internal="mDepthWrite"] attribute bool        depthWrite;
+	[Internal="mDepthFunc"] attribute CompareMode depthFunc;
+	[Internal="mStencilTest"] attribute bool        stencilTest;
+	[Internal="mStencilReadMask"] attribute int     stencilReadMask;
+	[Internal="mStencilWriteMask"] attribute int     stencilWriteMask;
+	[Internal="mStencilFrontFunc"] attribute CompareMode stencilFrontFunc;
+	[Internal="mStencilFrontFail"] attribute StencilOp   stencilFrontFail;
+	[Internal="mDepthFrontFail"] attribute StencilOp   depthFrontFail;
+	[Internal="mStencilFrontPass"] attribute StencilOp   stencilFrontPass;
+	[Internal="mStencilBackFunc"] attribute CompareMode stencilBackFunc;
+	[Internal="mStencilBackFail"] attribute StencilOp   stencilBackFail;
+	[Internal="mDepthBackFail"] attribute StencilOp   depthBackFail;
+	[Internal="mStencilBackPass"] attribute StencilOp   stencilBackPass;
+};
+
+[NoDelete]
+interface RasterizerStateDesc {
+	[Internal="mCullMode"] attribute CullMode  cullMode;
+	[Internal="mDepthBias"] attribute int   depthBias;
+	[Internal="mSlopeScaledDepthBias"] attribute float     slopeScaledDepthBias;
+	[Internal="mFillMode"] attribute FillMode  fillMode;
+	[Internal="mFrontFace"] attribute FrontFace frontFace;
+	[Internal="mMultiSample"] attribute bool      multiSample;
+	[Internal="mScissor"] attribute bool      scissor;
+	[Internal="mDepthClampEnable"] attribute bool      depthClampEnable;
+};
+
+interface StateBuilder {
+	void StateBuilder();
+	void reset();
+
+	[Const] BlendStateDesc blend();
+	[Const] DepthStateDesc depth();
+	[Const] RasterizerStateDesc raster();
+
+	void addToHash(HashBuilder hash);
+};
+
+
+
+enum VertexAttribRate
+{
+	"VERTEX_ATTRIB_RATE_VERTEX",
+	"VERTEX_ATTRIB_RATE_INSTANCE",
+	"VERTEX_ATTRIB_RATE_COUNT"
+};
+
+[NoDelete]
+interface VertexAttrib
+{
+	attribute ShaderSemantic   mSemantic;
+	attribute uint         mSemanticNameLength;
+	[CObject, Internal="forge_vertex_attrib_set_semantic"] void setSemanticName( String name );
+	//char             mSemanticName[MAX_SEMANTIC_NAME_LENGTH];
+	attribute TinyImageFormat  mFormat;
+	attribute uint         mBinding;
+	attribute uint         mLocation;
+	attribute uint         mOffset;
+	attribute VertexAttribRate mRate;
+} ;
+
+interface VertexLayout
+{
+	void VertexLayout();
+
+	[Internal="mAttribCount"] attribute  uint     attribCount;
+	//VertexAttrib mAttribs[MAX_VERTEX_ATTRIBS];
+	[CObject, Const, Internal="forge_vertex_layout_get_attrib"] VertexAttrib attrib(int idx);
+	[Internal="mStrides"] attribute  uint [] strides;
+};
+
+
+[NoDelete]
+interface Globals {
+	[Internal="hlForgeInitialize", Static]
+	bool initialize(String name);
+
+	[Static]
+	void waitForAllResourceLoads();
+};
+
+[NoDelete]
+interface RenderTarget {
+	[Internal="mSampleCount"] attribute SampleCount sampleCount;
+	[Internal="mSampleQuality"] attribute uint sampleQuality;
+	[Internal="mWidth"] attribute uint width;
+	[Internal="mHeight"] attribute uint height;
+	/// Internal image format
+	[Internal="mFormat"] attribute TinyImageFormat format;
+	[CObject, Const, Internal="forge_render_target_get_texture"] Texture getTexture();
+
+	[CObject, Internal="forge_render_target_set_clear_colour"] void setClearColor( float r, float g, float b,float a);
+	[CObject, Internal="forge_render_target_set_clear_depth"] void setClearDepthNormalized( float depth, int stencil );
+
+	[CObject, Internal="forge_render_target_capture"] void captureAsBuffer(TransferBuffer pTransferBuffer,  Semaphore semaphore);
+	[CObject,Internal="forge_render_target_capture_size"] int captureSize();
+};
+
+[NoDelete]
+interface GraphicsPipelineDesc {
+	[Const] attribute Shader              pShaderProgram;
+	[Const] attribute RootSignature       pRootSignature;
+	[Const] attribute VertexLayout        pVertexLayout;
+	[Const] attribute BlendStateDesc      pBlendState;
+	[Const] attribute DepthStateDesc      pDepthState;
+	[Const] attribute RasterizerStateDesc pRasterizerState;
+	//TinyImageFormat*     pColorFormats;
+	attribute uint             mRenderTargetCount;
+	[Internal="mSampleCount"] attribute SampleCount          sampleCount;
+	[Internal="mSampleQuality"] attribute uint             sampleQuality;
+	[Internal="mDepthStencilFormat"] attribute TinyImageFormat  depthStencilFormat;
+	attribute PrimitiveTopology    mPrimitiveTopo;
+	attribute bool                 mSupportIndirectCommandBuffer;
+    attribute bool                 mVRFoveatedRendering;
+
+};
+
+[NoDelete]
+interface ComputePipelineDesc {
+	[Const, Internal="pShaderProgram"] attribute Shader              shaderProgram;
+	[Const, Internal="pRootSignature"] attribute RootSignature       rootSignature;
+};
+
+interface PipelineCache {
+
+};
+
+[Internal="HlForgePipelineDesc"]
+interface PipelineDesc {
+	void PipelineDesc();
+
+	[Const] GraphicsPipelineDesc graphicsPipeline();
+	[Const] ComputePipelineDesc computePipeline();
+
+	attribute PipelineCache pCache;
+//	void*          pPipelineExtensions;
+	attribute uint       mExtensionCount;
+
+	void setName( String name );
+	void reset();
+    void setRenderTargetGlobals(  SampleCount sampleCount, int sampleQuality );
+    int addGraphicsRenderTarget(  TinyImageFormat format );
+};
+
+interface BufferBinder {
+	void BufferBinder();
+
+	void reset();
+	int add(Buffer buf, int stride, int offset);
+};
+
+interface ResourceBarrierBuilder {
+	void ResourceBarrierBuilder();
+	int addRTBarrier( RenderTarget rt, ResourceState src, ResourceState dst);        
+	void insert( Cmd cmd);
+};
+
+[NoDelete]
+interface Cmd {
+	
+	[CObject, Internal="forge_render_target_bind"] void bind(RenderTarget rt, RenderTarget depthstencil, LoadActionType color, LoadActionType depth);
+	[CObject, Internal="forge_cmd_unbind"] void unbindRenderTarget();
+	[CObject,  Internal="beginCmd"] void begin();
+	[CObject,  Internal="endCmd"] void end();
+	[CObject,  Internal="cmdBindPushConstants"] void pushConstants(RootSignature rs, int index, bytes data);
+	[CObject,  Internal="BufferExt::bindAsIndex"] void bindIndexBuffer(Buffer b, IndexType format , int offset);
+	[CObject, Internal="BufferBinder::bindAsVertex"] void bindVertexBuffer( BufferBinder binder );
+	[CObject,  Internal="cmdDrawIndexed"] void drawIndexed( int vertCount, uint first_index, uint first_vertex);
+	[CObject, Internal="cmdBindPipeline"] void bindPipeline( Pipeline pipeline );
+	[CObject, Internal="cmdBindDescriptorSet"] void bindDescriptorSet(int index, DescriptorSet set);
+//	[CObject,Internal="forge_cmd_wait_for_render"] void renderBarrier( RenderTarget rt );
+//	[CObject,Internal="forge_cmd_wait_for_present"] void presentBarrier( RenderTarget rt );
+	[CObject,Internal="forge_cmd_insert_barrier"] void insertBarrier( ResourceBarrierBuilder barrier );
+	[CObject,Internal="cmdDispatch"] void dispatch( int groupx, int groupy, int groupz );
+};
+
+
+
+interface Map64Int {
+	void Map64Int();
+	bool exists( int64 key );
+	void set( int64 key , int value);
+	int get( int64 key );
+	int size();
+};
+
+[NoDelete]
+interface CmdPool {
+	
+
+};
+
+[NoDelete]
+interface Fence {
+	
+
+};
+
+[NoDelete]
+interface Semaphore {
+	
+
+};
+
+[NoDelete]
+interface Queue {
+	[CObject, Internal="waitQueueIdle"] void waitIdle();
+	[CObject, Internal="forge_queue_submit_cmd"] void submit(Cmd cmd, Semaphore signalSemphor, Semaphore wait, Fence signalFence);
+};
+
+[NoDelete]
+interface SwapChain {
+	[CObject, Const, Internal="forge_swap_chain_get_render_target"] RenderTarget getRenderTarget(int rtidx);
+
+	[CObject] bool isVSync();
+
+
+};
+
+
+interface RenderTargetDesc {
+	[Initialize] void RenderTargetDesc();
+
+	/// Texture creation flags (decides memory allocation strategy, sharing access,...)
+	[Internal="mFlags", SetCast="TextureCreationFlags"] attribute uint flags;
+	/// Width
+	[Internal="mWidth"] attribute uint  width;
+	/// Height
+	[Internal="mHeight"] attribute uint  height;
+	/// Depth (Should be 1 if not a mType is not TEXTURE_TYPE_3D)
+	[Internal="mDepth"] attribute uint  depth;
+	/// Texture array size (Should be 1 if texture is not a texture array or cubemap)
+	[Internal="mArraySize"] attribute uint  arraySize;
+	/// Number of mip levels
+	[Internal="mMipLevels"] attribute uint  mipLevels;
+	/// MSAA
+	[Internal="mSampleCount"] attribute SampleCount sampleCount;
+
+	/// What state will the texture get created in
+	[Internal="mStartState"] attribute ResourceState startState;
+
+	/// Internal image format
+	[Internal="mFormat"] attribute TinyImageFormat format;
+
+
+	/*
+	
+	
+	/// Optimized clear value (recommended to use this same value when clearing the rendertarget)
+	ClearValue mClearValue;
+		*/
+	/// The image quality level. The higher the quality, the lower the performance. The valid range is between zero and the value appropriate for mSampleCount
+	[Internal="mSampleQuality"] attribute uint sampleQuality;
+	/// Descriptor creation
+	[Internal="mDescriptors"] attribute DescriptorType descriptors;
+	[Internal="pNativeHandle", GetCast="void*"] attribute VoidPtr nativeHandle;
+	/// Debug name used in gpu profile
+	//const char* pName;
+	/// GPU indices to share this texture
+	//uint32_t* pSharedNodeIndices;
+	/// Number of GPUs to share this texture
+	[Internal="mSharedNodeIndexCount"] attribute uint mSharedNodeIndexCount;
+
+	/// GPU which will own this texture
+	[Internal="mNodeIndex"] attribute uint  nodeIndex;
+
+};
+
+
+
+
+[NoDelete]
+interface Pipeline {
+
+};
+
+[NoDelete, Internal="Shader"]
+interface Shader {
+
+};
+
+[NoDelete]
+interface RootSignature {
+	[CObject] int getDescriptorIndexFromName( String name );
+};
+
+[Initialize]
+interface SamplerDesc {
+	void SamplerDesc();
+	attribute FilterType  mMinFilter;
+	attribute FilterType  mMagFilter;
+	attribute MipMapMode  mMipMapMode;
+	attribute AddressMode mAddressU;
+	attribute AddressMode mAddressV;
+	attribute AddressMode mAddressW;
+	attribute float       mMipLodBias;
+	attribute bool		mSetLodRange;
+	attribute float       mMinLod;
+	attribute float       mMaxLod;
+	attribute float       mMaxAnisotropy;
+	attribute CompareMode mCompareFunc;
+};
+
+[NoDelete]
+interface Sampler {
+
+};
+
+[Initialize]
+interface DescriptorSetDesc {
+	void DescriptorSetDesc();
+
+	[Const] attribute RootSignature pRootSignature;
+	[Internal="mUpdateFrequency"] attribute DescriptorUpdateFrequency updateFrequency;
+	[Internal="mMaxSets"] attribute uint maxSets;
+	[Internal="mNodeIndex"] attribute uint nodeIndex;
+};
+
+[NoDelete]
+interface DescriptorSet {
+
+};
+
+enum DescriptorSlotMode {
+    "DBM_TEXTURES",
+    "DBM_SAMPLERS",
+	"DBM_UNIFORMS"
+};
+
+interface DescriptorDataBuilder {
+	void DescriptorDataBuilder();
+	void clear();
+	void clearSlotData(int index);
+	int addSlot(DescriptorSlotMode descriptorType);
+	void setSlotBindName(int slot, String name);
+	void setSlotBindIndex(int slot, int index);
+	[Internal="addSlotData"] void addSlotTexture( int slot, Texture tex );
+	[Internal="addSlotData"] void addSlotSampler( int slot, Sampler sampler );
+	[Internal="addSlotData"] void addSlotUniformBuffer( int slot, Buffer uniformBuffer );
+	void setSlotUAVMipSlice( int slot, int idx );
+	void update(Renderer renderer, int index, DescriptorSet set);
+	void bind(Cmd cmd, int index, DescriptorSet set);	
+};
+
+[Internal="RootSignatureFactory"]
+interface RootSignatureDesc {
+	void RootSignatureDesc();
+	
+	void addShader(Shader shader);
+	void addSampler( Sampler sampler, String name );
+
+};
+
+[Internal="Buffer", NoDelete]
+interface TransferBuffer {
+
+};
+
+[NoDelete]
+interface Renderer {
+	//Const is a hack to get it to not generate a finalizer
+	[CObject, Const] Queue createQueue();
+
+	[CObject] void removeQueue(Queue pGraphicsQueue);
+	[CObject, Internal="forge_sdl_create_render_target",Const] RenderTarget createRenderTarget(RenderTargetDesc desc);
+	[CObject, Internal="forge_init_loader"]
+	void initResourceLoaderInterface();
+	[CObject, Internal="forge_sdl_renderer_create_cmd_pool", Const] CmdPool createCommandPool(Queue queue);
+	[CObject, Internal="forge_sdl_renderer_create_cmd", Const] Cmd createCommand(CmdPool pool);
+	[CObject, Internal="forge_sdl_renderer_create_fence", Const] Fence createFence();
+	[CObject, Internal="forge_sdl_renderer_create_semaphore", Const] Semaphore createSemaphore();
+	[CObject] uint acquireNextImage(SwapChain pSwapChain, Semaphore pImageAcquiredSemaphore, Fence fence, [Return] uint swapIndex);
+
+	[CObject, Internal="forge_load_compute_shader_file", Const] Shader loadComputeShader( String fileName );
+
+	[CObject, Const] DescriptorSet addDescriptorSet( DescriptorSetDesc desc, [Return] DescriptorSet set ); 
+	[CObject, Const, Internal="forge_renderer_create_descriptor_set"] DescriptorSet createDescriptorSet( RootSignature sig, DescriptorUpdateFrequency updateFrequency, uint maxSets, uint nodeIndex ); 
+
+	[CObject, Const, Internal="addSampler"] Sampler createSampler(  SamplerDesc desc, [Return] Sampler samplers );
+	[CObject, Internal="forge_renderer_wait_fence"] void waitFence( Fence fence );
+	[CObject, Internal="forge_renderer_shader_create", Const] Shader createShader(String vertShaderPath, String fragShaderPath);
+
+
+	[CObject, Internal="forge_render_target_capture_2"] bool captureAsBytes(Cmd submittableCmd, RenderTarget renderTarget, Queue queue,  ResourceState renderTargetCurrentState, bytes buffer, int bufferSize);
+
+	[CObject] void resetCmdPool( CmdPool pool );
+	[CObject,Internal="addPipeline", Const] Pipeline createPipeline( PipelineDesc desc, [Return]Pipeline pipeline);
+
+	[CObject,Internal="forge_renderer_createRootSignatureSimple", Const] RootSignature createRootSigSimple(Shader shader);
+	[CObject,Internal="forge_renderer_createRootSignature", Const] RootSignature createRootSig(RootSignatureDesc desc);
+
+	[CObject,Internal="::toggleVSync"] void toggleVSync([AddressOf] SwapChain sc);
+	[CObject,Internal="forge_create_transfer_buffer", Const] TransferBuffer createTransferBuffer(TinyImageFormat format, int width, int height, int nodeIndex);
+
+	[CObject,Internal="forge_renderer_destroySwapChain", Const] void destroySwapChain(SwapChain swapChain);
+	[CObject,Internal="forge_renderer_destroyRenderTarget", Const] void destroyRenderTarget(RenderTarget swapChain);
+
+	[CObject, Internal="forge_renderer_fill_descriptor_set"] void fillDescriptorSet( Buffer buf, DescriptorSet ds, DescriptorSlotMode mode, int slotIndex);
+
+};
+
+
+
+
+[Internal="SDL_Window", NoDelete]
+interface SDLWindow {
+};
+
+interface ForgeSDLWindow {
+	void ForgeSDLWindow ( SDLWindow sdlWindow );
+	[Const] SwapChain createSwapChain( Renderer renderer, Queue queue, int width, int height, int count, bool hdr10);	
+	[Const] Renderer renderer();
+	void present(Queue pGraphicsQueue, SwapChain pSwapChain, int swapchainImageIndex, Semaphore pRenderCompleteSemaphore);
+
+
+};
+
+interface SyncToken {
+
+};
+
+[Internal="BufferExt"]
+interface Buffer {
+	void updateRegion(bytes data, int toffset, int size, int soffset);
+	void update(bytes data);
+	void dispose();
+	bytes getCpuAddress();
+	int getSize();
+	int next();
+	int currentIdx();
+	void setCurrent(int idx);
+};
+
+
+[Internal="BufferLoadDescExt"]
+interface BufferLoadDesc {
+//	Buffer**    ppBuffer;
+//	const void* pData;
+//	BufferDesc  mDesc;
+	/// Force Reset buffer to NULL
+//	bool mForceReset;
+
+	[Initialize] void BufferLoadDesc();
+
+	[Internal="mForceReset"] attribute bool forceReset;
+	//[Internal="pData"] attribute VoidPtr data;
+	//[Cast="Buffer**", Internal="ppBuffer"] attribute VoidPtr buffer;
+	Buffer load(SyncToken syncToken);
+
+	void setIndexBuffer( int size, bytes data );
+	void setVertexBuffer( int size, bytes data );
+	void setUniformBuffer( int size, bytes data );
+	void setDynamic( int depth );
+	void setUsage(bool shared);
+
+	// [CObject, Internal="forge_sdl_buffer_load_desc_set_index_buffer"] void setIndexbuffer( int size, bytes data, bool shared );
+	// [CObject, Internal="forge_sdl_buffer_load_desc_set_vertex_buffer"] void setVertexbuffer( int size, bytes data, bool shared );
+	// [CObject, Internal="forge_sdl_buffer_load_desc_set_uniform_buffer"] void setUniformBuffer( int size, bytes data, bool shared );
+//	[CObject, Internal="forge_sdl_buffer_load_desc_set_dynamic"] void setDynamic( bool isDynamic );
+};
+
+[NoDelete]
+interface Texture {
+	[CObject, Internal="forge_sdl_texture_upload"] void upload(bytes data, int size);
+	[CObject, Internal="forge_texture_upload_mip"] void uploadMip(int mip, bytes data, int size);
+	[CObject, Internal="forge_texture_upload_layer_mip"] void uploadLayerMip(int layer, int mip, bytes data, int size);
+
+	
+	[CObject, Internal="removeResource"]  void dispose();
+
+};
+
+interface TextureDesc {
+	[Initialize] void TextureDesc();
+	[CObject, Internal="forge_texture_load_from_desc", Const] Texture load(String name, SyncToken syncToken);
+
+	//ClearValue mClearValue;
+	/// Pointer to native texture handle if the texture does not own underlying resource
+	[Internal="pNativeHandle", GetCast="void*"] attribute VoidPtr nativeHandle;
+	/// Debug name used in gpu profile
+	//const char* pName;
+	/// GPU indices to share this texture
+	//uint32_t* pSharedNodeIndices;
+	/// Texture creation flags (decides memory allocation strategy, sharing access,...)
+	[Internal="mFlags"] attribute TextureCreationFlags flags;
+	/// Width
+	[Internal="mWidth"] attribute uint width;
+	/// Height
+	[Internal="mHeight"] attribute uint height;
+	/// Depth (Should be 1 if not a mType is not TEXTURE_TYPE_3D)
+	[Internal="mDepth"] attribute uint depth;
+	/// Texture array size (Should be 1 if texture is not a texture array or cubemap)
+	[Internal="mArraySize"] attribute uint arraySize;
+	/// Number of mip levels
+	[Internal="mMipLevels"] attribute uint mipLevels;
+	/// Number of multisamples per pixel (currently Textures created with mUsage TEXTURE_USAGE_SAMPLED_IMAGE only support SAMPLE_COUNT_1)
+	[Internal="mSampleCount"] attribute SampleCount sampleCount;
+	/// The image quality level. The higher the quality, the lower the performance. The valid range is between zero and the value appropriate for mSampleCount
+	[Internal="mSampleQuality"] attribute uint sampleQuality;
+	///  image format
+	[Internal="mFormat"] attribute TinyImageFormat format;
+	/// What state will the texture get created in
+	[Internal="mStartState"] attribute ResourceState startState;
+	/// Descriptor creation
+	[Internal="mDescriptors", SetCast="DescriptorType"] attribute uint descriptors;
+	/// Number of GPUs to share this texture
+	[Internal="mSharedNodeIndexCount"] attribute uint sharedNodeIndexCount;
+	/// GPU which will own this texture
+	[Internal="mNodeIndex"] attribute uint nodeIndex;
+
+};
+
+interface TextureLoadDesc {
+
+	[Initialize] void TextureLoadDesc();
+	[CObject, Internal="forge_texture_load",Const]  Texture load(SyncToken syncToken);
+
+
+	[Internal="mCreationFlag"] attribute TextureCreationFlags creationFlag;
+};
+
+[NoDelete]
+interface Tools {
+		[Static, STL, Internal="forge_translate_glsl_metal"] String glslToMetal( String source, String path, bool fragmentShader);
+		[Static, Internal="hl_compile_metal_to_bin"] void metalToBin( String sourcePath, String outpath );
+};
+
+enum AttributeSemantic {
+	"POSITION",
+	"NORMAL",
+	"TANGENT",
+	"BITANGENT",
+	"UV0",
+	"UV1",
+	"UV2",
+	"UV3",
+	"UV4",
+	"UV5",
+	"UV6",
+	"UV7",
+	"COLOR",
+	"USER0",
+	"USER1",
+	"USER2",
+	"USER3",
+	"USER4",
+	"USER5",
+	"USER6",
+	"USER7"
+};
+
+enum AttributeType {
+	"FLOAT16",
+	"FLOAT32",
+	"FLOAT64",
+	"UINT8",
+	"UINT16",
+	"UINT32",
+	"UINT64"
+};
+
+
+
+interface PolyMesh {
+	void PolyMesh();
+
+	// Building
+	void reserve( int polynodes );
+	int addAttribute( String name, AttributeSemantic semantic, AttributeType type, int dimensions );
+	int beginPolygon(int count );
+	int beginPolyNode( );
+	void setNodeAddtribute1f( int attr, float x );
+	void setNodeAddtribute2f( int attr, float x, float y );
+	void setNodeAddtribute3f( int attr, float x, float y, float z );
+	void setNodeAddtribute4f( int attr, float x, float y, float z, float w );
+	void setNodeAddtribute1d( int attr, double x );
+	void setNodeAddtribute2d( int attr, double x, double y );
+	void setNodeAddtribute3d( int attr, double x, double y, double z );
+	void setNodeAddtribute4d( int attr, double x, double y, double z, double w );
+	int endPolyNode();
+	int endPolygon();
+
+	//Query
+	int numPolyNodes();
+	int numVerts();
+	int numPolys();
+	int getIndices( int * indices );
+	int getStride();
+	void getInterleavedVertices( bytes data );
+	int numAttributes();
+	int getAttributeIndexBySemantic( AttributeSemantic semantic );
+	int getAttributeOffset( int index );
+	AttributeSemantic getAttributeSemantic( int index );
+	AttributeType getAttributeType( int index );
+	int getAttributeDimensions( int index );
+	[STL] String getAttributeName(int index );
+
+	//Procedures
+	void removeDuplicateVerts();
+	void convexTriangulate();
+	void optimizeTriangleIndices();
+	bool optimizeTriangleIndicesForOverdraw();
+	void optimizeTriangleMemoryFetch();
+};
+
+
+
+[NoDelete]
+interface MeshConverter {
+
+};
+

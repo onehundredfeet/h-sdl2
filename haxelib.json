@@ -1,0 +1,13 @@
+{
+    "name"         :  "h-sdl2",
+    "url"          :  "https://github.com/onehundredfeet/h-sdl2",
+    "license"      :  "MIT",
+    "tags"         :  [""],
+    "description"  :  "Drop in replacement for Heaps SDL requirements. Heavily derived from the hashlink SDL2 bindings.",
+    "version"      :  "0.1.0",
+    "classPath"    :  "lib",
+    "releasenote"  :  "Initial work",
+    "contributors" :  ["ncannasse","onehundredfeet"],
+    "dependencies" :  {}
+}
+
