@@ -17,7 +17,7 @@ class Generator {
 		#include \"${target}-sdl2.h\"
 		';
 		var options = { idlFile : "lib/sdl/sdl2.idl", nativeLib : "sdl2", outputDir : "src/"+target, includeCode : INCLUDE, autoGC : true, target: target };
-		webidl.Generate.generateCpp(options);
+		idl.Generate.generateCpp(options);
 	}
 
 }
