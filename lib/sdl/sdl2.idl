@@ -11,3 +11,23 @@ interface Joystick {
 	int getId(  );
 	String getName(  );
 };
+
+HL_PRIM bool HL_NAME(hint_value)( vbyte* name, vbyte* value) {
+	return SDL_SetHint((char*)name, (char*)value) == SDL_TRUE;
+}
+
+HL_PRIM int HL_NAME(event_poll)( SDL_Event *e ) {
+	return SDL_PollEvent(e);
+}
+
+HL_PRIM bool HL_NAME(event_loop)( event_data *event ) {
+
+interface Sdl {
+	// [Static] void init();
+	[Static] bool initOnce();
+	[Static] void quit();
+	[Static] void delay( int ms );
+	[Static] bool eventLoop();
+	// [Static] bool hintValue( String name, String value );
+	//[Static] void getFramerate( WindowPtr window );
+}

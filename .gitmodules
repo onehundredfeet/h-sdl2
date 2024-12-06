@@ -1,3 +1,6 @@
 [submodule "ext/hashlink"]
 	path = ext/hashlink
 	url = https://github.com/HaxeFoundation/hashlink.git
+[submodule "ext/sdl2"]
+	path = ext/sdl2
+	url = https://github.com/libsdl-org/SDL.git
